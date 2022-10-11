@@ -1,0 +1,15 @@
+.lineChildren{
+  transform: translate(0, 500px);
+}
+
+.lineChildrenDev{
+  transform: translate(0, 500px);
+}
+
+/* .lineChildrenDesc{
+  transform: translate(0, 500px);
+} */
+
+.lineParents{
+  overflow: hidden;
+}
