@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Navbar from './components/Navbar/Navbar';
+import NavBar from './components/Navbar/NavBar';
 import { Outlet } from 'react-router-dom';
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -14,7 +14,7 @@ function App() {
       }
       data-scroll-container
     >
-      <Navbar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
+      <NavBar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
       <Outlet />
     </div>
   );
