@@ -27,7 +27,7 @@ const MenuList = ({ menu, BsArrowUpRight, setIsNavOpen, isNavOpen }) => {
     <>
       <li className="flex">
         <Link
-          className="links font-playFairSc uppercase text-5xl md:text-7xl flex items-start relative"
+          className="links font-montserrat uppercase text-5xl md:text-7xl flex items-start relative opacity-50 hover:opacity-100"
           to={menu.link}
           onClick={() => setIsNavOpen((open) => !open)}
         >
