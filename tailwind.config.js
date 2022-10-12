@@ -9,6 +9,7 @@ module.exports = {
       ubuntu: ['Ubuntu'],
       montserrat: ['montserrat'],
       cinzel: ['Cinzel'],
+      babas: ['Bebas Neue'],
     },
   },
   plugins: [],
