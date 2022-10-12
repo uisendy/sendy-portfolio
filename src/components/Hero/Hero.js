@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="relative flex flex-col gap-2 md:gap-0 justify-center mb-20 pt-12 items-start w-[70%] h-[100%] my-0 mx-auto ">
         <h1
           id="header"
-          className=" text-7xl italic md:not-italic md:text-9xl font-extrabold  "
+          className=" uppercase text-7xl italic md:not-italic md:text-9xl font-extrabold  "
         >
           Hi, I'm Sendy.
         </h1>
