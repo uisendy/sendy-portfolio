@@ -8,7 +8,7 @@ import LogoWhiteFrameless from '../../assets/images/LogoWhiteFrameless.png';
 
 const Menu = ({ menuList, isNavOpen, setIsNavOpen }) => {
   return (
-    <div className=" bg-black">
+    <div className="">
       <nav className=" relative flex items-center justify-between pr-5">
         <div
           onClick={() => setIsNavOpen((open) => !open)}
