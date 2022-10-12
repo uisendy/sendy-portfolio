@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <section data-scroll-section className="h-[80vh] bg-black text-white mb-20">
-      <div className=" bg-black relative flex flex-col gap-2 md:gap-0 justify-center mb-20 pt-12 items-start w-[70%] h-[100%] my-0 mx-auto ">
+    <section data-scroll-section className="h-[80vh] text-white mb-20">
+      <div className="relative flex flex-col gap-2 md:gap-0 justify-center mb-20 pt-12 items-start w-[70%] h-[100%] my-0 mx-auto ">
         <h1
           id="header"
           className=" text-7xl italic md:not-italic md:text-9xl font-extrabold  "
