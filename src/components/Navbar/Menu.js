@@ -20,7 +20,7 @@ const Menu = ({ menuList, isNavOpen, setIsNavOpen }) => {
         >
           <div className="menu-icon"></div>
         </div>
-        <div className=" bg-blue-200">
+        <div className="">
           <div className={isNavOpen ? 'showMenuNav' : 'hideMenuNav'}>
             {' '}
             <div className="nav-menu flex justify-center flex-col gap-10 w-[80%] mx-[auto]">
