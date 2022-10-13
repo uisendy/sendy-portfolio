@@ -1,16 +1,16 @@
-import html5 from '../Assets/Logo/html5.svg';
-import css3 from '../Assets/Logo/css3-alt.svg';
-import react from '../Assets/Logo/react.svg';
-import js from '../Assets/Logo/js.svg';
+// import html5 from '../Assets/Logo/html5.svg';
+// import css3 from '../Assets/Logo/css3-alt.svg';
+// import react from '../Assets/Logo/react.svg';
+// import js from '../Assets/Logo/js.svg';
 
 const dataSet = {
   skillsSet: {
-    languages: [
-      { id: 1, item: html5, progress: '85' },
-      { id: 2, item: css3, progress: '75' },
-      { id: 3, item: js, progress: '79' },
-      { id: 4, item: react, progress: '60' },
-    ],
+    // languages: [
+    //   { id: 1, item: html5, progress: '85' },
+    //   { id: 2, item: css3, progress: '75' },
+    //   { id: 3, item: js, progress: '79' },
+    //   { id: 4, item: react, progress: '60' },
+    // ],
     myTools: [
       {
         id: 1,
