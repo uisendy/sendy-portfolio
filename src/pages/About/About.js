@@ -3,6 +3,10 @@ import Hero from './Hero';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useLocation } from 'react-router-dom';
+import Description from './Description';
+import Experience from './Experience';
+import Skills from './Skills';
+import Footer from '../../components/Footer/Footer';
 
 const About = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -16,6 +20,10 @@ const About = () => {
   return (
     <section className=" text-white px-[6.5%]">
       <Hero />
+      <Description />
+      <Skills />
+      <Experience />
+      <Footer />
     </section>
   );
 };
