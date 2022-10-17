@@ -66,7 +66,7 @@ const Footer = () => {
       data-scroll-section
       ref={ref}
       className={cn(
-        'footer-section text-white pt-10 flex flex-col gap-7 justify-center',
+        'footer-section bg-black h-screen text-white pt-10 flex flex-col gap-7 justify-center',
         { 'is-reveal': onScreen },
       )}
     >
