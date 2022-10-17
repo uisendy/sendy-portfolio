@@ -1,10 +1,86 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './hero.css';
 import ScrollDown from '../ScrollDownIcon/ScrollDown.js';
 import { BsArrowUpRight } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import { gsap } from 'gsap';
+import SplitText from '../../utils/split3.min.js';
 
 const Hero = () => {
+  useEffect(() => {
+    const split = new SplitText('#header', {
+      type: 'lines',
+      linesClass: 'lineChildren',
+    });
+
+    const splitPos = new SplitText('#header-dev', {
+      type: 'lines',
+      linesClass: 'lineChildrenDev',
+    });
+    const contactSplit = new SplitText('.contact', {
+      type: 'lines',
+      linesClass: 'lineChildrenDev',
+    });
+
+    const splitDesc = new SplitText('#header-desc', {
+      type: 'lines',
+      linesClass: 'lineChildrenDesc',
+    });
+
+    new SplitText('#header', {
+      type: 'lines',
+      linesClass: 'lineParents',
+    });
+    new SplitText('.contact', {
+      type: 'lines',
+      linesClass: 'lineParents',
+    });
+    new SplitText('#header-dev', {
+      type: 'lines',
+      linesClass: 'lineParents',
+    });
+
+    // new SplitText('#header-desc', {
+    //   type: 'words,chars',
+    //   linesClass: 'lineParents',
+    // });
+    gsap.timeline().to(split.lines, {
+      duration: 2,
+      y: 0,
+      opacity: 1,
+      stagger: 0.1,
+      ease: 'power2',
+    });
+    gsap.set('#header', { perspective: 400 });
+
+    gsap.timeline().to(splitPos.lines, {
+      duration: 3,
+      y: 0,
+      opacity: 1,
+      stagger: 0.1,
+      ease: 'power2',
+    });
+    gsap.timeline().to(contactSplit.lines, {
+      duration: 4,
+      y: 0,
+      opacity: 1,
+      stagger: 0.1,
+      ease: 'power2',
+    });
+    gsap.set('#header-dev', { perspective: 400 });
+    gsap.timeline().from(splitDesc.lines, {
+      duration: 3,
+      opacity: 0,
+      scale: 0,
+      y: 80,
+      rotationX: 180,
+      transformOrigin: '0% 50% -50',
+      ease: 'back',
+      stagger: 0.01,
+    });
+
+    gsap.set('#header-desc', { perspective: 400 });
+  }, []);
   return (
     <section data-scroll-section className="h-[80vh] text-white mb-20">
       <div className="relative flex flex-col gap-2 md:gap-0 justify-center mb-20 pt-12 items-start w-[70%] h-[100%] my-0 mx-auto ">
