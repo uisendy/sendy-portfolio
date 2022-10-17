@@ -35,7 +35,6 @@ export default function useLocoScroll(start) {
       },
 
       scrollLeft(value) {
-        console.log('scrolling left');
         if (locoScroll) {
           return arguments.length
             ? locoScroll.scrollTo(value, 0, 0)
