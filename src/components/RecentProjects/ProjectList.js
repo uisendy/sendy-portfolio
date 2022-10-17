@@ -20,14 +20,14 @@ const ProjectList = ({ updateActiveImage, project, index }) => {
     <div
       ref={ref}
       className={cn(
-        'projects-wrapper project__wrapper__mobile aspect-video h-[100%] w-[100vw]',
+        'projects__wrapper project__wrapper__mobile aspect-video h-[100%] w-[100vw]',
         {
           'is-reveal': onScreen,
         },
       )}
     >
       <div className="hidden md:block " />
-      <div className=" project-item my-[5%] mx-[7%] p-[5%] md:will-change-transform rounded lg:rounded-2xl border border-zinc-400 flex flex-col lg:flex-row gap-7">
+      <div className=" project-item lg: h-[82%] mx-[7%] p-[5%] md:will-change-transform rounded lg:rounded-2xl border border-zinc-400 flex flex-col lg:flex-row gap-7">
         <div
           className={cn(
             'project-image bg-cover will-change-transform bg-center origin-center w-[50%] h-[100%] scale-100 lg:rounded-xl ',
