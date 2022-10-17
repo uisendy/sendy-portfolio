@@ -19,7 +19,7 @@ const ProjectListMobile = ({ updateActiveImage, project, index }) => {
   return (
     <div
       ref={ref}
-      className={cn('project__wrapper__mobile  aspect-video h-[80vh] w-[100vw]', {
+      className={cn('project__wrapper__mobile bg-black aspect-video h-[80vh] w-[100vw]', {
         'is-reveal': onScreen,
       })}
     >
