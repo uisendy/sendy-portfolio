@@ -10,10 +10,7 @@ const Hero = () => {
       >
         {' '}
         <h2 className=" text-5xl md:text-7xl lg:text-[7rem] mb-8">
-          I am{' '}
-          <span className=" underline-offset-8 opacity-50 italic">
-            Sendy Inieke
-          </span>{' '}
+          I am <span className=" underline-offset-8 opacity-50 italic">Sendy Inieke</span>{' '}
         </h2>
         <h3 className=" text-4xl md:text-5xl md:text-[7rem] mb-8">
           A FULL-STACK <br /> WEB DEVELOPER <br />
@@ -21,8 +18,10 @@ const Hero = () => {
         <p className=" font-montserrat font-extralight opacity-70 lg:text-2xl">
           Chess Player, Researcher, Energy Enthusiast
         </p>
+        <div className="absolute top-[90%] left-[47%]">
+          <ScrollDown />
+        </div>
       </div>
-      <ScrollDown xPosition={'50%'} yPosition={'85%'} position="absolute" />
     </div>
   );
 };
