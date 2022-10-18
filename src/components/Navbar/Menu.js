@@ -9,13 +9,13 @@ import LogoWhiteFrameless from '../../assets/images/LogoWhiteFrameless.png';
 const Menu = ({ menuList, isNavOpen, setIsNavOpen }) => {
   return (
     <div className="">
-      <nav className=" relative flex items-center justify-between pr-5">
+      <nav className=" relative flex items-center justify-between">
         <div
           onClick={() => setIsNavOpen((open) => !open)}
           className={
             isNavOpen
-              ? 'hamburger-menu is-active fixed top-10 left-10'
-              : 'hamburger-menu space-y-2 fixed top-10 left-10'
+              ? 'hamburger-menu is-active fixed top-10 left-[6.5%] lg:left-[1.2%]'
+              : 'hamburger-menu space-y-2 fixed top-10 left-[6.5%] lg:left-[1.2%]'
           }
         >
           <div className="menu-icon"></div>
@@ -66,7 +66,7 @@ const Menu = ({ menuList, isNavOpen, setIsNavOpen }) => {
           </div>
         </div>
         <Link
-          className="absolute top-10 right-12 z-50"
+          className="absolute top-8 right-[6.5%] lg:right-[1.5%] z-50"
           to={'/'}
           onClick={() => setIsNavOpen(false)}
         >
