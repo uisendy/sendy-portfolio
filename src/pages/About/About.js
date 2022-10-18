@@ -18,7 +18,7 @@ const About = () => {
   }, [location]);
 
   return (
-    <section className=" text-white px-[6.5%]">
+    <section className=" text-white">
       <Hero />
       <Description />
       <Skills />
