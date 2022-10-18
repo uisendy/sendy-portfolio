@@ -4,7 +4,7 @@ import Footer from '../../components/Footer/Footer';
 import ScrollToTop from '../../components/ScrollDownIcon/ScrollToTop';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
-import RecentProjects from '../../components/RecentProjects/RecentProjects';
+import Projects from '../../components/Projects/Projects';
 
 const Home = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -13,9 +13,9 @@ const Home = () => {
     ScrollTrigger.refresh();
   }, []);
   return (
-    <div>
+    <div className="relative">
       <Hero />
-      <RecentProjects />
+      <Projects useHeader={true} displayNo={3} />
       <Footer />
     </div>
   );
