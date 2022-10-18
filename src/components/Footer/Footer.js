@@ -66,7 +66,7 @@ const Footer = () => {
       data-scroll-section
       ref={ref}
       className={cn(
-        'footer-section bg-black h-screen text-white pt-10 flex flex-col gap-7 justify-center',
+        'footer-section z-50  lg:h-screen text-white pt-10 flex flex-col gap-7 justify-center',
         { 'is-reveal': onScreen },
       )}
     >
@@ -139,16 +139,16 @@ const Footer = () => {
             rel="noreferrer"
           >
             <div className="flex flex-col md:flex-row md:gap-5 items-center justify-center">
-              <FaFileDownload className=" block text-4xl text-white " />
-              <p className="font-montserrat font-extralight text-xs pt-3 md:pt-0 md:text-2xl leading-3  ">
+              <FaFileDownload className=" block text-2xl lg:text-4xl text-white " />
+              <p className="font-montserrat font-extralight text-base pt-3 md:pt-0 md:text-2xl leading-3  ">
                 Resume{' '}
               </p>
             </div>
-            <BsArrowUpRight className="arrow__up text-6xl font-light rotate-90 " />
+            <BsArrowUpRight className="hidden lg:block arrow__up text-6xl font-light rotate-90 " />
           </a>
         </div>
       </div>
-      <div className="border-t border-white/10 pt-10 h-32 ">
+      <div className=" hidden lg:block border-t border-white/10 pt-10 h-32 ">
         <p
           id="copyright-tag"
           className=" font-montserrat text-xs leading-relaxed text-center text-gray-300"
