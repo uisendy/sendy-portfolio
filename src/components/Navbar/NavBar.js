@@ -4,7 +4,7 @@ import Menu from './Menu';
 const NavBar = ({ isNavOpen, setIsNavOpen }) => {
   const menuList = [
     { id: 1, name: 'About', link: '/a-sendyinieke' },
-    { id: 2, name: 'projects', link: '/project' },
+    { id: 2, name: 'projects', link: '/projects' },
     { id: 3, name: 'contact', link: '/contact' },
   ];
   return (
