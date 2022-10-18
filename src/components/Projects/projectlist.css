@@ -1,0 +1,21 @@
+img{
+  clip-path: inset(0% 0% 0% 0%);
+}
+
+@media only screen and (min-device-width: 1024px){
+  .projects__wrapper {
+    display: grid;
+    grid-template-columns: 10vw 1fr 100px;
+    opacity: 0.7;
+    transition: all 0.2s;
+  }
+
+  .projects__wrapper.is-reveal {
+    opacity: 1;
+  }
+
+
+  .projects__wrapper.is-reveal .project-item {
+    background-color: rgb(27, 27, 27);
+  }
+}
