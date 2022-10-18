@@ -19,7 +19,7 @@ const Skills = () => {
   }, [openLang, openTools, openProd]);
 
   return (
-    <div data-scroll-section className=" h-full">
+    <div data-scroll-section className=" h-full px-[6.5%]">
       <SectionHeader title={'My Skills'} subtitle={'& Proficiency'} />
       <div className="skills__section__wrapper pb-20 pt-10 grid lg:grid-cols-3 gap-[6.5%] min-h-full">
         <div className="skills__language">
