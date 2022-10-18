@@ -18,7 +18,7 @@ const Experience = () => {
   }, [openWork, openTraining]);
 
   return (
-    <div data-scroll-section className=" mt-16">
+    <div data-scroll-section className=" mt-16 px-[6.5%]">
       <SectionHeader title="Experiences" subtitle={'& Trainings'} />
       <div className="pb-32 grid lg:grid-cols-2 gap-[6.5%] min-h-full">
         <div className="experience__work">
