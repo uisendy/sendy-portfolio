@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './hero.css';
 import ScrollDown from '../ScrollDownIcon/ScrollDown.js';
 import { BsArrowUpRight } from 'react-icons/bs';
@@ -7,16 +7,13 @@ import { gsap } from 'gsap';
 import SplitText from '../../utils/split3.min.js';
 
 const Hero = () => {
+  const ref = useRef();
   useEffect(() => {
+    ref.current.style.opacity = '1';
     const split = new SplitText('.welcome__heading', {
       type: 'lines',
       linesClass: 'header__lineChildren',
     });
-
-    // const contactSplit = new SplitText('.contact', {
-    //   type: 'lines',
-    //   linesClass: 'lineChildrenDev',
-    // });
 
     const splitDesc = new SplitText('#header-desc', {
       type: 'lines',
@@ -27,14 +24,6 @@ const Hero = () => {
       type: 'lines',
       linesClass: 'header__lineParents',
     });
-    // new SplitText('.contact', {
-    //   type: 'lines',
-    //   linesClass: 'lineParents',
-    // });
-    // new SplitText('#header-dev', {
-    //   type: 'lines',
-    //   linesClass: 'lineParents',
-    // });
 
     new SplitText('#header-desc', {
       type: 'words,chars',
@@ -43,8 +32,9 @@ const Hero = () => {
     gsap
       .timeline()
       .from(split.lines, {
-        duration: 2,
         opacity: 0,
+        delay: 2,
+        duration: 2,
         y: 250,
         rotate: 5,
         ease: 'power2',
@@ -69,32 +59,11 @@ const Hero = () => {
         stagger: 0.1,
         rotate: 0,
       });
-
-    // gsap.timeline().to(contactSplit.lines, {
-    //   duration: 4,
-    //   y: 0,
-    //   opacity: 1,
-    //   stagger: 0.1,
-    //   ease: 'power2',
-    // });
-    // gsap.set('#header-dev', { perspective: 400 });
-    // gsap.timeline().from(splitDesc.lines, {
-    //   duration: 3,
-    //   opacity: 0,
-    //   scale: 0,
-    //   y: 80,
-    //   rotationX: 180,
-    //   transformOrigin: '0% 50% -50',
-    //   ease: 'back',
-    //   stagger: 0.01,
-    // });
-
-    // gsap.set('#header-desc', { perspective: 400 });
-  }, []);
+  });
   return (
     <section data-scroll-section className=" relative h-[95vh] text-white">
       <div className="relative flex flex-col gap-24 justify-center items-start w-[87%] h-[100%] my-0 mx-auto ">
-        <div className="welcome__heading">
+        <div ref={ref} className="welcome__heading" style={{ opacity: '0' }}>
           <h1 id="header" className=" uppercase text-7xl md:text-9xl font-extrabold  ">
             Hi, I'm Sendy.
           </h1>
