@@ -9,11 +9,11 @@ import Projects from '../../components/Projects/Projects';
 const Home = () => {
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
-    <ScrollToTop />;
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     ScrollTrigger.refresh();
   }, []);
   return (
-    <div className="relative">
+    <div id="home__container" className=" relative" style={{ overflowY: 'scroll' }}>
       <Hero />
       <Projects useHeader={true} displayNo={3} />
       <Footer />
