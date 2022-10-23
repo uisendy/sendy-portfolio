@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import Hero from './Hero';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import { useLocation } from 'react-router-dom';
 import Description from './Description';
 import Experience from './Experience';
 import Skills from './Skills';
