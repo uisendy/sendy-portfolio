@@ -59,7 +59,11 @@ const Projects = ({ useHeader, displayNo = projects.length }) => {
   }, []);
 
   return (
-    <section data-scroll-section className=" text-white bg-black overflow-hidden mt-32">
+    <section
+      id="projects__section"
+      data-scroll-section
+      className=" text-white bg-black overflow-hidden mt-32"
+    >
       {useHeader && <SectionHeader title={'Recently'} subtitle={'Completed Projects'} />}
 
       {/* Desktop Version */}
