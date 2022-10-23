@@ -6,6 +6,7 @@ import './contact.css';
 
 const Contact = () => {
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     const split = new SplitText('.contact__header', {
       type: 'lines',
       linesClass: 'proj__lineChildren',
@@ -32,7 +33,10 @@ const Contact = () => {
       });
   }, []);
   return (
-    <div className="px-[6.5%] flex flex-col justify-center h-[95vh]">
+    <div
+      className="px-[6.5%] flex flex-col justify-center h-[95vh]"
+      style={{ overflowY: 'scroll' }}
+    >
       <h2 className="contact__header font-playFairSc uppercase text-4xl lg:text-7xl pb-10 text-white">
         Send a Message
       </h2>
