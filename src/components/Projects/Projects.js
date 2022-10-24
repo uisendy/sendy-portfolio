@@ -70,7 +70,7 @@ const Projects = ({ useHeader, displayNo = projects.length }) => {
       <div
         ref={ref}
         id="projects"
-        className="projects hidden h-[80vh] md:h-[100vh] md:pt-[15vh] md:pb-[2vh] md:w-[500%] lg:flex flex-nowrap relative"
+        className="projects hidden h-[80vh] md:h-[100vh] md:pt-[15vh] md:pb-[2vh] md:w-[700%] lg:flex flex-nowrap relative"
       >
         <div className="projects-counter text-xl font-montserrat absolute top-[6%] left-[150px] z-10 mix-blend-difference text-white inline-block ">
           <span>{activeImage}</span>
