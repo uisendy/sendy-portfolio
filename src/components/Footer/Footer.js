@@ -5,8 +5,10 @@ import SplitText from '../../utils/split3.min.js';
 import cn from 'classnames';
 import useOnScreen from '../../hooks/useOnScreen';
 import { BsArrowUpRight } from 'react-icons/bs';
+import myResume from '../../assets/Documents/Sendy_Inieke_Resume.pdf';
 
 import { FaGithub, FaLinkedinIn, FaTwitter, FaFileDownload } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const ref = useRef(null);
@@ -79,14 +81,14 @@ const Footer = () => {
             At this time, I'm hoping to join a new development team. Please let me know if
             you believe we might make a good match.
           </p>
-          <a
+          <Link
             id="mail"
             className="say__hello__link font-montserrat flex justify-center md:justify-start items-center gap-4 text-center text-2xl py-5 md:text-left"
-            href="mailto:ini.e.sendy@gmail.com"
+            to="/contact"
           >
             <p className="say__hello pb-4">Say Hello!</p>
             <BsArrowUpRight className="arrow__up text-6xl font-light visible md:invisible " />
-          </a>
+          </Link>
         </div>
         <div className="flex flex-wrap md:flex-col md:w-full">
           <a
@@ -132,10 +134,11 @@ const Footer = () => {
             <BsArrowUpRight className="arrow__up text-6xl font-light hidden md:block transition-all" />
           </a>
 
-          <a
+          <Link
             className="get__resume__link transition hover:mix-blend-difference w-[50%] md:w-full border-[1px] md:border-x-0 flex flex-col md:flex-row md:gap-5 md:items-center md:justify-between py-8 px-9 md:border-b-0"
-            href="https://twitter.com/SInieke/"
+            to={myResume}
             target="_blank"
+            download
             rel="noreferrer"
           >
             <div className="flex flex-col md:flex-row md:gap-5 items-center justify-center">
@@ -145,7 +148,7 @@ const Footer = () => {
               </p>
             </div>
             <BsArrowUpRight className="hidden lg:block arrow__up text-6xl font-light rotate-90 " />
-          </a>
+          </Link>
         </div>
       </div>
       <div className=" hidden lg:block border-t border-white/10 pt-10 h-32 ">
