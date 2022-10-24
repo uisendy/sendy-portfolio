@@ -12,7 +12,7 @@ const Skills = () => {
   const [openTools, setOpenTools] = useState(false);
   const [openProd, setOpenProd] = useState(false);
 
-  const { languages, myTools, myProductions } = dataSet.skillsSet;
+  const { skills, myTools, Professionalism } = dataSet.skillsSet;
 
   useEffect(() => {
     ScrollTrigger.refresh();
@@ -45,30 +45,7 @@ const Skills = () => {
               }
               className="pb-7 pt-5"
             >
-              <ul className="flex flex-col gap-4 w-[90%]">
-                {languages?.map((skill) => (
-                  <li
-                    key={skill.id}
-                    className="grid grid-cols-8 items-center gap-5 w-full"
-                  >
-                    {' '}
-                    <img src={skill.item} alt="skill" className="skill__image w-9 h-9" />
-                    <input
-                      type="range"
-                      defaultValue={skill.progress}
-                      max="100"
-                      min="0"
-                      step="2"
-                      id="myRange"
-                      className=" w-full h-0.5 bg-slate-400 outline-none appearance-none col-span-6 opacity-50"
-                    />
-                    <p className="font-montserrat font-thin">
-                      {skill.progress}
-                      {'%'}
-                    </p>
-                  </li>
-                ))}
-              </ul>
+              <SkillsList dataset={skills} />
             </div>
           </div>
         </div>
@@ -114,7 +91,7 @@ const Skills = () => {
               style={openProd ? { display: 'flex' } : { display: 'none' }}
               className="transition-all ease-in-out delay-150 duration-300 pt-5"
             >
-              <SkillsList dataset={myProductions} />
+              <SkillsList dataset={Professionalism} />
             </div>
           </div>
         </div>
