@@ -25,12 +25,10 @@ const Contact = () => {
         )
         .then(
           (result) => {
-            console.log(result.text);
-            setStatus('Message Sent Successfully');
+            result && setStatus('Message Sent Successfully');
           },
           (error) => {
-            console.log(error.text);
-            error.text && setStatus('Error Sending message');
+            error && setStatus('Error Sending message');
           },
         );
       setEmail('');
