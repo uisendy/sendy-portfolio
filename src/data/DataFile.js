@@ -5,16 +5,33 @@
 
 const dataSet = {
   skillsSet: {
-    // languages: [
-    //   { id: 1, item: html5, progress: '85' },
-    //   { id: 2, item: css3, progress: '75' },
-    //   { id: 3, item: js, progress: '79' },
-    //   { id: 4, item: react, progress: '60' },
-    // ],
+    skills: [
+      {
+        id: 1,
+        heading: 'Front-End',
+        items: [
+          { id: 1, item: 'javaScript' },
+          { id: 2, item: 'React' },
+          { id: 3, item: 'Redux' },
+          { id: 4, item: 'TypeScript' },
+          { id: 5, item: 'NextJs' },
+        ],
+      },
+      {
+        id: 2,
+        heading: 'Back-End',
+        items: [
+          { id: 1, item: 'Ruby' },
+          { id: 2, item: 'Ruby-on-Rails' },
+          { id: 3, item: 'ExpressJs' },
+          { id: 4, item: 'MySQL' },
+        ],
+      },
+    ],
     myTools: [
       {
         id: 1,
-        heading: 'Development platform',
+        heading: 'Tools',
         items: [
           { id: 1, item: 'VScode' },
           { id: 2, item: 'Atom' },
@@ -23,44 +40,41 @@ const dataSet = {
       },
       {
         id: 2,
-        heading: 'Organization Tools',
+        heading: 'Communication & Methods',
         items: [
-          { id: 1, item: 'GitHub' },
+          { id: 1, item: 'Git & GitHub' },
           { id: 2, item: 'Slack' },
           { id: 3, item: 'Discord' },
           { id: 4, item: 'Zendesk' },
           { id: 5, item: 'Zoom, Teams, Meet, etc' },
+          { id: 6, item: 'Netlify, Heroku' },
+          { id: 7, item: 'Mobile responsive' },
+          { id: 8, item: 'Dev Tools' },
+          { id: 9, item: 'Testing- Jest' },
         ],
       },
     ],
-    myProductions: [
+    Professionalism: [
       {
         id: 1,
-        heading: 'Front-end',
+        heading: 'Production',
         items: [
           { id: 1, item: 'E-commerce' },
           { id: 2, item: 'Landing page' },
           { id: 3, item: 'Showcase website' },
           { id: 4, item: 'Reusable Components' },
+          { id: 5, item: 'Software Project Management' },
+          { id: 6, item: 'Open Source Development' },
         ],
       },
 
       {
         id: 2,
-        heading: 'Back-end ',
+        heading: 'Professional',
         items: [
-          { id: 1, item: 'Software Project Management' },
-          { id: 2, item: 'Reusable Components' },
-          { id: 3, item: 'Open Source Development' },
-          { id: 4, item: 'Pair-Programming' },
-        ],
-      },
-      {
-        id: 3,
-        heading: 'Mobile Application Development',
-        items: [
-          { id: 1, item: 'Native Apps' },
-          { id: 2, item: 'Application & WebApp' },
+          { id: 1, item: 'Remote Pair-Programming' },
+          { id: 2, item: 'TeamWork' },
+          { id: 3, item: 'Mentoring' },
         ],
       },
     ],
