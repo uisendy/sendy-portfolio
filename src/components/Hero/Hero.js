@@ -75,7 +75,10 @@ const Hero = () => {
             DEVELOPER
           </p>
         </div>
-        <Link className="say__hello__link font-montserrat flex justify-center items-center gap-4 text-center text-2xl lg:pt-10 px-2">
+        <Link
+          to="/contact"
+          className="say__hello__link font-montserrat flex justify-center items-center gap-4 text-center text-2xl lg:pt-10 px-2"
+        >
           <p className="say__hello pb-2 md:pb-4">CONTACT</p>
           <BsArrowUpRight className="arrow__up text-4xl md:text-6xl font-light visible md:invisible " />
         </Link>
