@@ -1,8 +1,3 @@
-// import html5 from '../Assets/Logo/html5.svg';
-// import css3 from '../Assets/Logo/css3-alt.svg';
-// import react from '../Assets/Logo/react.svg';
-// import js from '../Assets/Logo/js.svg';
-
 const dataSet = {
   skillsSet: {
     skills: [
@@ -104,6 +99,31 @@ const dataSet = {
       },
       {
         id: 2,
+        heading: 'Kannex Technologies',
+        location: 'Port Harcourt, Nigeria (Part-Time)',
+        position: 'Junior Web Developer',
+        date: ' May 2020 - Present',
+        items: [
+          {
+            id: 1,
+            item: 'Hands-on development of websites, which includes development of HTML/CSS and web pages based on wireframes and visual designs, manage build using webpack and babel and implementation of commercial and open source web technologies',
+          },
+          {
+            id: 2,
+            item: 'Development of dynamic, responsive and engaging web functionality and eCommerce using JavaScript and scripting languages',
+          },
+          {
+            id: 3,
+            item: 'Development of reusable UI components using react.Js, and redux for state management',
+          },
+          {
+            id: 4,
+            item: 'Testing(TDD and BDD) and debugging of codes',
+          },
+        ],
+      },
+      {
+        id: 3,
         heading: 'Spectranet Nigeria',
         location: 'Lagos, Nigeria',
         position: 'IT technical Support',
