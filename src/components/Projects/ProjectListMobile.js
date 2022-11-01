@@ -40,14 +40,14 @@ const ProjectListMobile = ({ updateActiveImage, project, index, displayNo }) => 
                 {project.name}
               </h1>
               <div className="flex justify-center gap-3 ">
-                <a href="#home" className=" text-sm flex items-center gap-1">
+                <a href={project.source} className=" text-sm flex items-center gap-1">
                   <small>VIEW PROJECT </small>
                   <span>
                     <BsArrowUpRightCircle className="text-xl" />
                   </span>
                 </a>
                 <div className=" w-px h-5 bg-white"></div>
-                <a href="#sourceLink" className="text-sm flex items-center gap-1">
+                <a href={project.github} className="text-sm flex items-center gap-1">
                   <small>VIEW SOURCE </small>
                   <span>
                     <FaGithub className=" text-xl" />
